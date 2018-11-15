@@ -35,7 +35,7 @@ PLUGIN_EXPORT int PLUGIN_CALL AmxLoad(AMX* amx)
     return amx_Register(amx, nativeList, -1);
 }
 
-PLUGIN_EXPORT int PLUGIN_CALL Unload()
+PLUGIN_EXPORT int PLUGIN_CALL Unload(AMX* amx)
 {
     Natives::_Unload(gAmx, 0);
     return 1;
