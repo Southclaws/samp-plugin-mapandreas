@@ -138,3 +138,11 @@ PLUGIN_EXTERN_C cell AMX_NATIVE_CALL Natives::FindAverageZ(AMX* amx, cell* param
 }
 
 //----------------------------------------------------------
+// native MapAndreas_GetAddress();
+
+PLUGIN_EXTERN_C cell AMX_NATIVE_CALL Natives::GetAddress(AMX* amx, cell* params)
+{
+    return (int) &MapAndreas;
+}
+
+//----------------------------------------------------------

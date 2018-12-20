@@ -13,6 +13,7 @@ extern "C" AMX_NATIVE_INFO nativeList[] = {
     { "MapAndreas_Unload", Natives::_Unload },
     { "MapAndreas_SetZ_For2DCoord", Natives::SetZ_For2DCoord },
     { "MapAndreas_SaveCurrentHMap", Natives::SaveCurrentHMap },
+    { "MapAndreas_GetAddress", Natives::GetAddress },
     { 0, 0 }
 };
 AMX* gAmx;
