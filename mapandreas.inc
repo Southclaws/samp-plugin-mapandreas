@@ -2,6 +2,12 @@
 // 11.6.2014
 // Originally created by Kalcor, updated by Mauzen
 
+#if defined _mapandreas_included
+	#endinput
+#endif
+#define _mapandreas_included
+#pragma library mapandreas
+
 #define MAP_ANDREAS_MODE_NONE			0
 #define MAP_ANDREAS_MODE_MINIMAL		1
 #define MAP_ANDREAS_MODE_MEDIUM			2	// currently unused
