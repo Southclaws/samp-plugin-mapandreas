@@ -20,11 +20,11 @@
 #define MAP_ANDREAS_ERROR_DATA_FILES	3
 #define MAP_ANDREAS_ERROR_INVALID_AREA	4
 
-native MapAndreas_Init(mode, name[]="", len=sizeof(name));
+native MapAndreas_Init(mode, const name[]="", len=sizeof(name));
 native MapAndreas_FindZ_For2DCoord(Float:X, Float:Y, &Float:Z);
 native MapAndreas_FindAverageZ(Float:X, Float:Y, &Float:Z);
 native MapAndreas_Unload();
 native MapAndreas_SetZ_For2DCoord(Float:X, Float:Y, Float:Z);
-native MapAndreas_SaveCurrentHMap(name[]);
+native MapAndreas_SaveCurrentHMap(const name[]);
 
 native MapAndreas_GetAddress(); // Only for plugin usage
